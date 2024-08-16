@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+
+    <h2>Que son los formularios</h2>
+    <p>Un formulario en HTML es un elemento que permite a los usuarios ingresar datos en una página web.</p>
+
+    <!-- El formulario es un contenedor para diferentes datos de entrada -->
+
+    <!--La etiqueta <label> en HTML sirve para crear una asociación entre un texto descriptivo 
+        y un elemento de formulario, como un campo de texto, una casilla de verificación o un botón de radio.  -->
+
+    <form >
+        <div>
+            <label>Nombre</label>
+            <input type="text" placeholder="Ingresa tu nombre">
+        </div>
+        <br>
+        <!-- Mosca con una vaina las separacion se manejan con css no con br -->
+        <div>
+            <label>Apellido</label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email">
+        </div>
+        <br>
+        <div>
+            <label>Contrasena</label>
+            <input type="password">
+        </div>
+        <br>
+        <div>
+            <label>Acerca de ti</label>
+            <textarea placeholder="Cuentanos sobre ti"></textarea>
+        </div>
+        <br>
+        <!-- Permite seleecionar multiples opciones  -->
+        <div>
+            <label>Pasatiempos favoritos</label>
+            <ul>
+                <li><input type="checkbox" >Nadar</li>
+                <li><input type="checkbox"> Correr</li>
+
+            </ul>
+            
+        </div>
+        <br>
+        <!-- Permite seleccionar una sola opcion de un grupo de opciones -->
+        <div>
+            <h3>Estas de acuerdo</h3>
+            <label for="1">Si</label>
+            <input type="radio" name="opcion" id="1"> 
+            <label for="2">No</label>
+            <input type="radio" name="opcion" id="2"> 
+            <label for="3">Tal vez</label>
+            <input type="radio" name="opcion" id="arepa">
+        </div>
+        <br>
+        <!-- El tipo submit envia los datos del formulario -->
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>
